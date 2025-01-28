@@ -49,8 +49,8 @@ squareInput.addEventListener("input", () => {
         //console.log('Hovered over element with ID:', hoveredId);
         // Optionally, change the background color of the hovered element
 
-       let random = parseInt(Math.random() * 10);
-          event.target.style.backgroundColor = `${colors[random]}` ;
+          let randoms = parseInt(Math.random() * 10);
+          event.target.style.backgroundColor = `${colors[randoms]}` ;
   
      
       });
