@@ -29,6 +29,7 @@ squareInput.addEventListener("input", () => {
   const bor = (wid / inputValue) * 0.25;
   const finWid = parseFloat(wid - 2 * bor - 1.6);
 
+  let colors = ['red','yellow','green','blue','pink','gray','balck','browen','orange','cyan']
 
 
   for (i = 1; i <= inputValue; i++) {
@@ -47,7 +48,11 @@ squareInput.addEventListener("input", () => {
         //const hoveredId = event.target.id;
         //console.log('Hovered over element with ID:', hoveredId);
         // Optionally, change the background color of the hovered element
-      event.target.style.backgroundColor = "green";
+
+       let random = parseInt(Math.random() * 10);
+          event.target.style.backgroundColor = `${colors[random]}` ;
+  
+     
       });
 
 
