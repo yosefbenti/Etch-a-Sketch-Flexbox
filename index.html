@@ -7,18 +7,25 @@
     <script src="app.js" defer></script>
 </head>
 <body>
-    <p>Make the size of the square from 1 to 100 ,100 is best</p>
-    <p>Make the size of container 1 up to 1000 </p>
-    <p>Note! : the size of the container must be bigger than the square</p>
+   
+    <p><strong>1. Make the size of container 200 up to 1500</strong>  </p>
+    <p><strong>2. Make the size of the square from 1 to 100 ,100 is best</strong></p>
+    <p><strong>3. Note! :- the size of the container must be bigger than the square</strong></p>
+    <div>
+        <p></p>
+        <label for="squareInput" id="inputLabel">Container Size : </label>
+        <input id="containerSize" type="number" min="200" max="1500">
+        <button id="conSize">conSize</button>
+    </div>
+     <p></p>
     <div id="control">
         <label for="squareInput" id="inputLabel">Size of Square : </label>
         <input id="squareInput" type="number" max="100" min="1">
         <button id="submit"> Submit </button>
-        <p>container size</p>
-        <input id="containerSize" type="number" min="1" max="10000">
-        <button id="conSize">conSize</button>
+        <p></p>
     </div>
-    <p id="output">the input value</p>
+    <label> Number of Square x by x: </label>
+    <p id="output"></p>
     <div id="container">
 
     </div>

@@ -8,6 +8,12 @@ const p = document.querySelector("#output");
 let conS = 0;
 let newElementv ;
 let counter = 0;
+
+
+squareInput.disabled = true;
+//submit.disabled = true
+submit.style.visibility = 'hidden';
+
 containerSize.addEventListener("input", () => {
   conS = containerSize.value;
 
@@ -17,6 +23,7 @@ containerSize.addEventListener("input", () => {
   container.style.justifyContent = "space-evenly";
   container.style.width = `${conS}px`;
   container.style.height = `${conS}px`;
+  squareInput.disabled = false;
 });
 
 squareInput.addEventListener("input", () => {
